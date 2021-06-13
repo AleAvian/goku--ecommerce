@@ -8,7 +8,10 @@ import br.com.gokuecommerce.modelo.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 	
-	//crud repository ( banco)
+	Usuario findByLogin(String login);
+
+
+
 
 
 

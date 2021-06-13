@@ -16,17 +16,30 @@ public class UsuarioService {
     private UsuarioRepository usuarioRepository;
 
 
-    public Usuario salvar(Usuario usuario){
+    public Usuario salvar(Usuario usuario) {
         usuario = usuarioRepository.save(usuario);
         return usuario;
     }
 
-    public void deletar (long id )throws Exception {
+    public void deletar(long id) throws Exception {
         Optional<Usuario> opt = usuarioRepository.findById(id);
-        if(opt.isPresent()){
+        if (opt.isPresent()) {
             usuarioRepository.delete(opt.get());
-        }else {
+        } else {
             throw new Exception("Usuário nao encontrado...");
         }
     }
+
+    public boolean logar(String login, String senha) throws Exception {
+        Usuario usuario = usuarioRepository.findByLogin(login);
+        if (usuario == null) {
+            throw new Exception("Usuário nao encontrado...");
+        }
+        if (senha.equals(usuario.getSenha())) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
