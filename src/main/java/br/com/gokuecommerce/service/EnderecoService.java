@@ -32,5 +32,10 @@ public class EnderecoService {
         }
     }
 
+    public Endereco buscarPorCep (String cep) {
+        Endereco enderecoCep = enderecoRepository.findByCep(cep);
+        return enderecoCep;
+    }
+
 
 }
