@@ -1,13 +1,13 @@
-#GOKU E-Commerce
+# GOKU E-Commerce:
 Desenvolvimento de uma api rest para cadastro de endereços.
 
-##Suposições: 
+## Suposições: 
 - Sistema de cadastro de endereços(Logradouro, cep, cidade, estado, bairro), onde o administrador loga e pode cadastrar novos endereços
 - Cadastro de administradores (nome, login, senha) - para gerenciar endereços 
 - Endereços não tem ligação nenhuma com usuario. 
 - Um endereço por CEP
 
-##Requisitos técnicos: 
+## Requisitos técnicos: 
 - JAVA 11
 - MAVEN
 - H2 (Banco de dados em memória)
@@ -26,9 +26,9 @@ API REST, desenvolvido encima do Framework Spring boot. O sistema está dividido
 3. rodar o comando : `mvn spring-boot:run`
 4. Sistema rodando em: `http://localhost:8080`
 
-##API
+## API
 
-###Endereço
+### Endereço
 
 - POST - http://localhost:8080/endereco - Criar (id = null)/editar endereço
 		{
@@ -44,7 +44,7 @@ API REST, desenvolvido encima do Framework Spring boot. O sistema está dividido
 
 - GET - http://localhost:8080/endereco?cep={CEP} - Buscar endereço por cep
 
-###Usuário
+### Usuário
 
 - POST - - http://localhost:8080/usuario - Criar (id = null)/editar usuário
 
