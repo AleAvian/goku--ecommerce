@@ -59,6 +59,7 @@ API REST, desenvolvido encima do Framework Spring boot. O sistema está dividido
 - DELETE -  http://localhost:8080/usuario?id={id} - Deletar usuário
 
 - POST  http://localhost:8080/usuario/login - Fazer login
+
 		{
 			"login": "maria.jose",
 			"senha": "123456"
