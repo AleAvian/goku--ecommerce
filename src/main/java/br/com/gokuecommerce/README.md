@@ -31,12 +31,13 @@ API REST, desenvolvido encima do Framework Spring boot. O sistema está dividido
 ### Endereço
 
 - POST - http://localhost:8080/endereco - Criar (id = null)/editar endereço
+
 		{
-	    	"id": 1,
-	    	"cep": "11713060",
-	    	"logradouro": "rua 12",
-        	"bairro": "samamba",
-        	"cidade": "PG City",
+	    		"id": 1,
+	    		"cep": "11713060",
+	    		"logradouro": "rua 12",
+        		"bairro": "samamba",
+        		"cidade": "PG City",
 			"estado": "SP"
 		}
 
